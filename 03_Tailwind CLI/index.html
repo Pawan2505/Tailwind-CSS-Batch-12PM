@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Tailwind css setup with cli </title>
+</head>
+
+<body>
+
+<!-- Method 1: -->
+
+<ul class="bg-black text-white m-5 flex">
+    <li class="flex"><a href="" class="p-3 hover:bg-zinc-900">Home</a></li>
+    <li class="flex"><a href="" class="p-3 hover:bg-zinc-900">News</a></li>
+    <li class="flex"><a href="" class="p-3 hover:bg-zinc-900">Contact</a></li>
+    <li class="flex"><a href="" class="p-3 hover:bg-zinc-900">About</a></li>
+</ul>
+
+<!-- Method 2: -->
+
+<ul class="bg-slate-500 text-white m-5 flex [&>*]:flex">
+    <li><a href="" class="p-3 hover:bg-zinc-900">Home</a></li>
+    <li><a href="" class="p-3 hover:bg-zinc-900">News</a></li>
+    <li><a href="" class="p-3 hover:bg-zinc-900">Contact</a></li>
+    <li><a href="" class="p-3 hover:bg-zinc-900">About</a></li>
+</ul>
+
+
+
+</body>
+
+</html>
