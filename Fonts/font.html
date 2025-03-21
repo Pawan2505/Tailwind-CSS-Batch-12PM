@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page Title -->
+    <title>Add Google Font in Tailwind CSS</title>
+
+    <!-- Link to the compiled Tailwind CSS output file -->
+    <!-- Ensure you have Tailwind CSS set up and compiled using PostCSS or the Tailwind CLI -->
+    <link rel="stylesheet" href="output.css">
+
+    <!-- Google Fonts Integration -->
+    <!-- Including Guerrilla and Playfair Display fonts from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Guerrilla&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Custom font class definitions for Tailwind CSS */
+        @layer base {
+
+            /* Guerrilla font */
+            .font-guerrilla {
+                font-family: 'Guerrilla', sans-serif;
+            }
+
+            /* Playfair Display font */
+            .font-playfair {
+                font-family: 'Playfair Display', serif;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Container for the lecture content with center alignment -->
+    <div>
+
+        <!-- First Heading: Guerrilla font applied -->
+        <h1 class=" font-guerrilla text-9xl text-center text-blue-600">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, expedita?
+        </h1>
+
+        <!-- Second Heading: Default Tailwind font (no custom font applied) -->
+        <h1 class="text-9xl text-center text-red-500 mt-6">
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptatibus?
+        </h1>
+
+        <!-- Third Heading: Playfair Display font applied -->
+        <h1 class="font-playfair text-9xl text-center text-green-600 mt-6">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptatibus?
+        </h1>
+
+    </div>
+
+</body>
+
+</html>

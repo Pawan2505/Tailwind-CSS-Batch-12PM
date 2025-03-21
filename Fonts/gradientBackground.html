@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page Title -->
+    <title>Background Classes in Tailwind CSS</title>
+
+    <!-- Link to the compiled Tailwind CSS output file -->
+    <!-- Make sure you have Tailwind CSS set up and compiled using PostCSS or the Tailwind CLI -->
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Background Image Example with Tailwind CSS -->
+    <!-- The background is set to an image using bg-[url(...)] and other background utility classes -->
+    <div class="bg-red-500 h-96 bg-[url('funny-monkey.png')] bg-no-repeat bg-center bg-contain">
+        <!-- Content inside the div -->
+        <p class="text-white text-center text-xl pt-36">Code Step By Step</p>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Gradient Background with Tailwind CSS -->
+    <!-- This div creates a gradient from red to green with a vertical direction -->
+    <div class="bg-gradient-to-b from-red-500 to-green-500 h-96">
+        <p class="text-white text-center pt-36 text-xl">Gradient Background (Red to Green)</p>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Gradient Background with Tailwind CSS (Horizontal) -->
+    <!-- This creates a gradient from red to green horizontally -->
+    <div class="bg-gradient-to-l from-red-500 to-green-500 h-96">
+        <p class="text-white text-center pt-36 text-xl">Gradient Background (Left to Right)</p>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Gradient Background with Tailwind CSS (Diagonal) -->
+    <!-- This creates a gradient from blue to yellow at a diagonal (top-right to bottom-left) -->
+    <div class="bg-gradient-to-tr from-blue-500 to-yellow-500 h-96">
+        <p class="text-white text-center pt-36 text-xl">Diagonal Gradient Background (Blue to Yellow)</p>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Box with Shadow (Outer Shadow) -->
+    <!-- This div has a shadow effect with the shadow-2xl utility -->
+    <div class="h-96 m-32 shadow-orange-400 shadow-2xl bg-white">
+        <p class="text-center pt-36">Box with Outer Shadow</p>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Box with Inner Shadow -->
+    <!-- This div has an inner shadow effect using the shadow-inner utility -->
+    <div class="h-96 m-32 bg-white shadow-inner shadow-orange-400">
+        <p class="text-center pt-36">Box with Inner Shadow</p>
+    </div>
+
+</body>
+
+</html>

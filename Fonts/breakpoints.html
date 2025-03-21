@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Points in Tailwind</title>
+
+    <!-- Link to the compiled Tailwind CSS output file -->
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="h-screen">
+
+    <!-- Div with dynamic background colors based on screen width -->
+    <div class="bg-red-500 h-full
+         lg:bg-green-400   <!-- Large screens -->
+         md:bg-blue-800    <!-- Medium screens -->
+         sm:bg-orange-500  <!-- Small screens -->
+         xl:bg-slate-500   <!-- Extra-large screens -->
+         2xl:bg-pink-600"> <!-- Double extra-large screens -->
+
+        <!-- Text size changes based on the screen size -->
+        <h1 class="text-4xl        <!-- Default text size (smaller screens) -->
+                  2xl:text-9xl    <!-- Text size for 2x large screens -->
+                  xl:text-7xl     <!-- Text size for extra-large screens -->
+                  lg:text-6xl     <!-- Text size for large screens -->
+                  md:text-9xl     <!-- Text size for medium screens -->
+                  sm:text-sm"> <!-- Text size for small screens -->
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, vero?
+        </h1>
+    </div>
+
+</body>
+
+</html>
